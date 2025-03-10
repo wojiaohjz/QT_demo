@@ -80,6 +80,7 @@ class Postman:
         self.ui.textBrowser.append(f"body: {response.content.decode('utf-8')}")
         self.ui.textBrowser.ensureCursorVisible()
 
+
 if __name__ == '__main__':
     app = QApplication([])
     postman = Postman()
