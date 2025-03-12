@@ -1,3 +1,4 @@
+from PySide6.QtGui import QIcon
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication, QTableWidgetItem
 import requests
@@ -83,6 +84,7 @@ class Postman:
 
 if __name__ == '__main__':
     app = QApplication([])
+    app.setWindowIcon(QIcon('logo.png'))
     postman = Postman()
     postman.ui.show()
     app.exec()
